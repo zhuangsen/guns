@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
  *  服务实现类
  * </p>
  *
- * @author stylefeng123
- * @since 2018-01-16
+ * @author madison123
+ * @since 2018-11-08
  */
 @Service
 public class Tb1HouseServiceImpl extends ServiceImpl<Tb1HouseMapper, Tb1House> implements ITb1HouseService {

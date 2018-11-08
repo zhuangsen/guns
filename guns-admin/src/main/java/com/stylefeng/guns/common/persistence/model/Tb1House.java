@@ -2,7 +2,9 @@ package com.stylefeng.guns.common.persistence.model;
 
 import java.io.Serializable;
 
+import com.baomidou.mybatisplus.enums.IdType;
 import java.util.Date;
+import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
@@ -13,14 +15,15 @@ import java.io.Serializable;
  * 
  * </p>
  *
- * @author stylefeng123
- * @since 2018-01-16
+ * @author madison123
+ * @since 2018-11-08
  */
 @TableName("tb1_house")
 public class Tb1House extends Model<Tb1House> {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
     @TableField("house_user")
     private String houseUser;
@@ -30,6 +33,7 @@ public class Tb1House extends Model<Tb1House> {
     private Date houseDate;
     @TableField("house_desc")
     private String houseDesc;
+
 
     public Integer getId() {
         return id;

@@ -8,8 +8,8 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  *  Mapper 接口
  * </p>
  *
- * @author stylefeng123
- * @since 2018-01-16
+ * @author madison123
+ * @since 2018-11-08
  */
 public interface Tb1HouseMapper extends BaseMapper<Tb1House> {
 

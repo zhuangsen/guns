@@ -19,7 +19,7 @@ import com.stylefeng.guns.modular.housemanager.service.ITb1HouseService;
  * 房屋管理控制器
  *
  * @author fengshuonan
- * @Date 2018-01-16 15:57:19
+ * @Date 2018-11-08 10:52:35
  */
 @Controller
 @RequestMapping("/tb1House")
@@ -63,13 +63,14 @@ public class Tb1HouseController extends BaseController {
     @RequestMapping(value = "/list")
     @ResponseBody
     public Object list(String condition) {
-        //判断condition是否有值
+        // 判断condition是否有值
         if(ToolUtil.isEmpty(condition)){
+            //如果没有值，则表示查询全部
             return tb1HouseService.selectList(null);
         }else{
-            //如果有值，则认为是按业务名称进行模糊查询
+            // 如果有值，则认为是按业务名称进行模糊查询
             EntityWrapper<Tb1House> entityWrapper = new EntityWrapper<>();
-            Wrapper<Tb1House> wrapper = entityWrapper.like("house_user",condition);
+            Wrapper<Tb1House> wrapper = entityWrapper.like("house_user", condition);
             return tb1HouseService.selectList(wrapper);
         }
     }

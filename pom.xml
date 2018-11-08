@@ -7,11 +7,15 @@
     <version>1.0</version>
     <description>代码生成器</description>
 
+    <packaging>pom</packaging>
+
     <modules>
-        <module>guns-admin</module>
-        <module>guns-core</module>
-        <module>guns-generator</module>
         <module>guns-parent</module>
-        <module>guns-rest</module>
     </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.9.RELEASE</version>
+    </parent>
 </project>
