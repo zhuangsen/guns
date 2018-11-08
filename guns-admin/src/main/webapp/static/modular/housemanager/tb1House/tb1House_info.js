@@ -49,6 +49,7 @@ Tb1HouseInfoDlg.collectData = function() {
     .set('houseUser')
     .set('houseAddress')
     .set('houseDate')
+        .set('houseDesc')
     ;
 }
 

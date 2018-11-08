@@ -3,12 +3,12 @@ package com.stylefeng.guns.common.persistence.model;
 import java.io.Serializable;
 
 import com.baomidou.mybatisplus.enums.IdType;
-import java.util.Date;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
+import java.sql.Date;
 
 /**
  * <p>

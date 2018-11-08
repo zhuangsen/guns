@@ -77,6 +77,14 @@ public class Tb1HouseController extends BaseController {
 
     /**
      * 新增房屋管理
+     * 注意: Tb1House中Date类型为java.sql.Date
+     * tb1House_info.js 添加
+     * this
+         .set('id')
+         .set('houseUser')
+         .set('houseAddress')
+         .set('houseDate')
+         .set('houseDesc')
      */
     @RequestMapping(value = "/add")
     @ResponseBody
